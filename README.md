@@ -63,24 +63,20 @@ Quick walkthrough of the app:
 
 ## 📷 Screenshots
 
-<div align="center">
-
 ### Home — Encrypt / Decrypt
-<img src="Screenshots_Websites/Home%20page.png" width="800" alt="CipherVault home page — encrypt and decrypt panel"><br><br>
+![Home page](Screenshots_Websites/Home%20page.png)
 
 ### Login / Sign up
-<img src="Screenshots_Websites/Login%20page.png" width="800" alt="CipherVault login and sign-up page"><br><br>
+![Login page](Screenshots_Websites/Login%20page.png)
 
 ### About
-<img src="Screenshots_Websites/abouts.png" width="800" alt="CipherVault about page"><br><br>
+![About page](Screenshots_Websites/abouts.png)
 
 ### Contact
-<img src="Screenshots_Websites/Contacts.png" width="800" alt="CipherVault contact page"><br><br>
+![Contact page](Screenshots_Websites/Contacts.png)
 
 ### Admin panel
-<img src="Screenshots_Websites/admin%20page.png" width="800" alt="CipherVault admin panel showing users and vault items">
-
-</div>
+![Admin panel](Screenshots_Websites/admin%20page.png)
 
 ---
 
