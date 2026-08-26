@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CipherVault — Login</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">
+    <span class="brand-mark">◈</span>
+    <span class="brand-name">CipherVault</span>
+  </div>
+  <nav class="site-nav">
+    <a href="index.html">Encrypt</a>
+    <a href="dashboard.html">Vault</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" class="active">Login</a>
+  </nav>
+</header>
+
+<main class="page">
+
+  <section class="hero">
+    <p class="eyebrow">your key vault, protected by a password you control</p>
+    <h1 id="form-heading">Welcome back.</h1>
+  </section>
+
+  <section class="panel">
+    <div class="panel-tabs">
+      <button class="tab active" data-mode="login">Login</button>
+      <button class="tab" data-mode="signup">Sign up</button>
+    </div>
+
+    <form id="auth-form" class="cipher-form">
+      <div class="field-group">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="you@example.com" autocomplete="username">
+      </div>
+      <div class="field-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="••••••••" autocomplete="current-password">
+      </div>
+      <p class="hint" id="auth-error"></p>
+      <div class="action-row">
+        <button type="submit" id="auth-submit-btn" class="btn btn-primary">Log in</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="panel note-panel">
+    <h3>Note</h3>
+    <ul>
+      <li>Your account password only protects access to your vault dashboard — it never encrypts your files directly.</li>
+      <li>Each item you encrypt uses its own passphrase or key pair. Losing that means losing the data, account access won't recover it.</li>
+    </ul>
+  </section>
+
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

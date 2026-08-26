@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CipherVault — Contact</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">
+    <span class="brand-mark">◈</span>
+    <span class="brand-name">CipherVault</span>
+  </div>
+  <nav class="site-nav">
+    <a href="index.html">Encrypt</a>
+    <a href="dashboard.html">Vault</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<main class="page">
+
+  <section class="hero">
+    <p class="eyebrow">questions, bugs, feedback</p>
+    <h1>Get in touch.</h1>
+  </section>
+
+  <div class="contact-layout">
+
+    <section class="panel">
+      <form id="contact-form" class="cipher-form" novalidate>
+        <div class="field-group">
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" placeholder="Your name" autocomplete="name">
+        </div>
+        <div class="field-group">
+          <label for="contact-email">Email</label>
+          <input type="text" id="contact-email" placeholder="you@example.com" autocomplete="email">
+        </div>
+        <div class="field-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" rows="6" maxlength="1000" placeholder="What's on your mind?"></textarea>
+          <p class="char-count"><span id="contact-char-count">0</span> / 1000</p>
+        </div>
+        <p class="hint" id="contact-status"></p>
+        <div class="action-row">
+          <button type="submit" id="contact-submit-btn" class="btn btn-primary">Send message</button>
+        </div>
+      </form>
+    </section>
+
+    <aside class="contact-sidebar">
+      <section class="panel">
+        <p class="panel-heading">Other ways to reach us</p>
+
+        <div class="contact-info-item">
+          <span class="contact-info-icon">💻</span>
+          <div>
+            <h4>Source code</h4>
+            <a href="https://github.com/mahabubhasanmahin/CipherVault" target="_blank" rel="noopener">github.com/mahabubhasanmahin/CipherVault</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <span class="contact-info-icon">🐛</span>
+          <div>
+            <h4>Found a bug?</h4>
+            <a href="https://github.com/mahabubhasanmahin/CipherVault/issues" target="_blank" rel="noopener">Open an issue on GitHub</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <span class="contact-info-icon">👥</span>
+          <div>
+            <h4>Built by</h4>
+            <p>Md Mahabub Hasan Mahin, Md Majaharul Islam &amp; Walid Ahammed</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel note-panel">
+        <h3>Good to know</h3>
+        <ul>
+          <li>This is a university course project — the form isn't actively monitored for support requests.</li>
+          <li>Never send an encryption passphrase or private key through this form, or anywhere outside CipherVault itself.</li>
+        </ul>
+      </section>
+    </aside>
+
+  </div>
+
+</main>
+
+<script src="js/contact.js"></script>
+</body>
+</html>

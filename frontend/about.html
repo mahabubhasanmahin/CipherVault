@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CipherVault — About</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">
+    <span class="brand-mark">◈</span>
+    <span class="brand-name">CipherVault</span>
+  </div>
+  <nav class="site-nav">
+    <a href="index.html">Encrypt</a>
+    <a href="dashboard.html">Vault</a>
+    <a href="about.html" class="active">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<main class="page">
+
+  <section class="hero">
+    <p class="eyebrow">cryptography &amp; cybersecurity course project</p>
+    <h1>Zero-knowledge, by design.</h1>
+  </section>
+
+  <section class="panel">
+    <p class="panel-heading">What CipherVault is</p>
+    <p class="lede">
+      CipherVault encrypts text and files entirely inside your browser before anything
+      touches a server. It was built as a university project to demonstrate practical,
+      hands-on use of symmetric and asymmetric cryptography — AES-256-GCM, RSA-OAEP, and
+      ChaCha20-Poly1305 — in a real, working application rather than just in theory. That
+      means key derivation, authenticated encryption, JWT-based auth, and a genuinely
+      zero-knowledge storage design: the server only ever sees ciphertext and metadata,
+      never your plaintext or your passphrase.
+    </p>
+  </section>
+
+  <section class="panel">
+    <p class="panel-heading">How it's built</p>
+    <div class="about-grid">
+      <div class="about-card">
+        <span class="about-card-icon">🔒</span>
+        <h4>Client-side encryption</h4>
+        <p>AES-GCM and RSA-OAEP run through the browser's native Web Crypto API; ChaCha20-Poly1305 runs through libsodium.js, since it isn't in Web Crypto yet.</p>
+      </div>
+      <div class="about-card">
+        <span class="about-card-icon">🗄️</span>
+        <h4>Personal vault</h4>
+        <p>Save, list, and delete your encrypted items, each tagged with its algorithm and creation date.</p>
+      </div>
+      <div class="about-card">
+        <span class="about-card-icon">🔗</span>
+        <h4>Expiring share links</h4>
+        <p>Send an item to someone else via a time-limited token; the passphrase or private key still never touches the server.</p>
+      </div>
+      <div class="about-card">
+        <span class="about-card-icon">🛠️</span>
+        <h4>Admin dashboard</h4>
+        <p>Usage stats plus every registered user and vault item, for the account holder managing the deployment.</p>
+      </div>
+      <div class="about-card">
+        <span class="about-card-icon">🔑</span>
+        <h4>Auth</h4>
+        <p>JWT sessions with bcrypt-hashed passwords, backed by MongoDB.</p>
+      </div>
+      <div class="about-card">
+        <span class="about-card-icon">🚫</span>
+        <h4>No recovery, by design</h4>
+        <p>Lose your passphrase or private key and the data is gone — that's the trade-off of true zero-knowledge storage.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <p class="panel-heading">Tech stack</p>
+    <div class="stack-badges">
+      <span class="stack-badge">HTML / CSS / vanilla JS</span>
+      <span class="stack-badge">Web Crypto API</span>
+      <span class="stack-badge">libsodium.js</span>
+      <span class="stack-badge">Python / Flask</span>
+      <span class="stack-badge">flask-jwt-extended</span>
+      <span class="stack-badge">flask-bcrypt</span>
+      <span class="stack-badge">MongoDB Atlas</span>
+    </div>
+  </section>
+
+  <section class="panel">
+    <p class="panel-heading">Team</p>
+    <div class="team-grid">
+      <div class="team-card">
+        <span class="team-avatar">MM</span>
+        <span>Md Mahabub Hasan Mahin</span>
+      </div>
+      <div class="team-card">
+        <span class="team-avatar">MI</span>
+        <span>Md Majaharul Islam</span>
+      </div>
+      <div class="team-card">
+        <span class="team-avatar">WA</span>
+        <span>Walid Ahammed</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel note-panel">
+    <h3>A note on scope</h3>
+    <ul>
+      <li>This is an academic project, built to demonstrate cryptographic concepts end-to-end — not a hardened production service.</li>
+      <li>For production use it would still need rate limiting, refresh tokens, enforced HTTPS, and stronger private-key handling.</li>
+      <li>There is no password or passphrase recovery by design — losing either means losing the data.</li>
+    </ul>
+  </section>
+
+</main>
+
+</body>
+</html>
