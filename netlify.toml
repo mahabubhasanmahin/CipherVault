@@ -1,0 +1,10 @@
+[build]
+  base = "frontend"
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Static multi-page site — no SPA redirect needed since every page
+# (index.html, login.html, dashboard.html, admin.html, share.html)
+# is a real file. Leaving this here in case that ever changes.

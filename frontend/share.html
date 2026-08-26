@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CipherVault — Shared Item</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">
+    <span class="brand-mark">◈</span>
+    <span class="brand-name">CipherVault</span>
+  </div>
+  <nav class="site-nav">
+    <a href="index.html">Encrypt</a>
+  </nav>
+</header>
+
+<main class="page">
+
+  <section class="hero">
+    <p class="eyebrow">someone shared an encrypted item with you</p>
+    <h1>Unlock it.</h1>
+  </section>
+
+  <section class="panel" id="load-error-panel" style="display:none;">
+    <p class="hint" id="load-error-text"></p>
+  </section>
+
+  <section class="panel" id="share-panel" style="display:none;">
+    <div class="field-group">
+      <label>Filename</label>
+      <p id="share-filename" style="font-family: var(--font-mono);"></p>
+    </div>
+    <div class="field-group">
+      <label>Algorithm</label>
+      <p><span class="badge" id="share-algorithm" style="display:inline-block; padding: 0.15rem 0.6rem; border-radius: 999px; background: rgba(79,227,208,0.12); border: 1px solid rgba(79,227,208,0.35); color: var(--cyan); font-family: var(--font-mono); font-size: 0.8rem;"></span></p>
+    </div>
+    <div class="field-group">
+      <label for="share-passphrase">Passphrase</label>
+      <input type="password" id="share-passphrase" placeholder="Enter the passphrase you were given">
+    </div>
+    <div class="action-row">
+      <button type="button" id="unlock-btn" class="btn btn-primary">Unlock</button>
+    </div>
+  </section>
+
+  <section class="panel result-panel hidden" id="result-panel">
+    <h2>Decrypted content</h2>
+    <textarea id="result-output" rows="6" readonly></textarea>
+  </section>
+
+</main>
+
+<script src="js/config.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/libsodium-wrappers/0.7.13/sodium.min.js"></script>
+<script src="js/webcrypto.js"></script>
+<script src="js/share.js"></script>
+</body>
+</html>
