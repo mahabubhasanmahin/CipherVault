@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CipherVault — About</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">
+    <span class="brand-mark">◈</span>
+    <span class="brand-name">CipherVault</span>
+  </div>
+  <nav class="site-nav">
+    <a href="index.html">Encrypt</a>
+    <a href="dashboard.html">Vault</a>
+    <a href="about.html" class="active">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<main class="page">
+
+  <section class="hero">
+    <p class="eyebrow">cryptography &amp; cybersecurity course project</p>
+    <h1>Zero-knowledge, by design.</h1>
+  </section>
+
+  <section class="panel">
+    <h3>What CipherVault is</h3>
+    <p class="hint" style="font-size: 0.95rem; color: var(--text-main); line-height: 1.7;">
+      CipherVault encrypts text and files entirely inside your browser before anything
+      touches a server. It was built as a university project to demonstrate practical,
+      hands-on use of symmetric and asymmetric cryptography — AES-256-GCM, RSA-OAEP, and
+      ChaCha20-Poly1305 — in a real, working application rather than just in theory. That
+      means key derivation, authenticated encryption, JWT-based auth, and a genuinely
+      zero-knowledge storage design: the server only ever sees ciphertext and metadata,
+      never your plaintext or your passphrase.
+    </p>
+  </section>
+
+  <section class="panel">
+    <h3>How it's built</h3>
+    <ul style="color: var(--text-dim); font-size: 0.9rem; padding-left: 1.2rem; line-height: 1.8;">
+      <li><strong style="color: var(--text-main);">Client-side encryption</strong> — AES-GCM and RSA-OAEP run through the browser's native Web Crypto API; ChaCha20-Poly1305 runs through libsodium.js, since it isn't in Web Crypto yet.</li>
+      <li><strong style="color: var(--text-main);">Personal vault</strong> — save, list, and delete your encrypted items, each tagged with its algorithm and creation date.</li>
+      <li><strong style="color: var(--text-main);">Expiring share links</strong> — send an item to someone else via a time-limited token; the passphrase or private key still never touches the server.</li>
+      <li><strong style="color: var(--text-main);">Admin dashboard</strong> — usage stats plus every registered user and vault item, for the account holder managing the deployment.</li>
+      <li><strong style="color: var(--text-main);">Auth</strong> — JWT sessions with bcrypt-hashed passwords, backed by MongoDB.</li>
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h3>Tech stack</h3>
+    <div style="display: flex; flex-wrap: wrap; gap: 0.6rem;">
+      <span class="eyebrow" style="margin: 0;">HTML / CSS / vanilla JS</span>
+      <span class="eyebrow" style="margin: 0;">Web Crypto API</span>
+      <span class="eyebrow" style="margin: 0;">libsodium.js</span>
+      <span class="eyebrow" style="margin: 0;">Python / Flask</span>
+      <span class="eyebrow" style="margin: 0;">flask-jwt-extended</span>
+      <span class="eyebrow" style="margin: 0;">flask-bcrypt</span>
+      <span class="eyebrow" style="margin: 0;">MongoDB Atlas</span>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h3>Team</h3>
+    <ul style="color: var(--text-dim); font-size: 0.92rem; padding-left: 1.2rem; line-height: 1.8;">
+      <li>Md Mahabub Hasan Mahin</li>
+      <li>Md Majaharul Islam</li>
+      <li>Walid Ahammed</li>
+    </ul>
+  </section>
+
+  <section class="panel note-panel">
+    <h3>A note on scope</h3>
+    <ul>
+      <li>This is an academic project, built to demonstrate cryptographic concepts end-to-end — not a hardened production service.</li>
+      <li>For production use it would still need rate limiting, refresh tokens, enforced HTTPS, and stronger private-key handling.</li>
+      <li>There is no password or passphrase recovery by design — losing either means losing the data.</li>
+    </ul>
+  </section>
+
+</main>
+
+</body>
+</html>
