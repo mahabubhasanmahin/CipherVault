@@ -127,9 +127,14 @@ CipherVault/
 │       └── webcrypto.js / api.js / auth.js / dashboard.js / admin.js / share.js / contact.js
 ├── Screenshots_Websites/       # README screenshots
 └── netlify.toml                # tells Netlify to publish frontend/
+
 ```
+## 🌐 Live Demo
+
+[![Live Demo](https://ciphervault22.netlify.app/)
 
 ---
+
 
 ## 🚀 Getting started
 
