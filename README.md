@@ -44,9 +44,9 @@ It was built to demonstrate practical, hands-on use of symmetric and asymmetric 
 
 ---
 
-## 🖼️ Demo
+## 🌐 Live Demo
 
-**Try it live:** *[your Netlify URL here]*
+**Try it live:** *[https://ciphervault22.netlify.app/]*
 
 Quick walkthrough of the app:
 
@@ -129,12 +129,6 @@ CipherVault/
 └── netlify.toml                # tells Netlify to publish frontend/
 
 ```
-## 🌐 Live Demo
-
-[![Live Demo](https://ciphervault22.netlify.app/)
-
----
-
 
 ## 🚀 Getting started
 
